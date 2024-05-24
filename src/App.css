@@ -124,7 +124,7 @@ nav {
   background-color: rgb(24, 24, 153);
 }
 .about-section-container {
-  margin-top: 20rem;
+  padding-top: 10rem;
   position: relative;
   display: flex;
   align-items: center;

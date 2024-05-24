@@ -2,11 +2,22 @@ import React from "react";
 // import BannerBackground from "../Assets/home-banner-background.png";
 import BannerImage from "../Assets/home-banner-image.png";
 import Navbar from "./Navbar";
+import About from "./About";
 import { FiArrowRight } from "react-icons/fi";
+import Work from "./Work";
+import Contact from "./Contact";
+import { useNavigate } from "react-router-dom";
+import Footer from "./Footer";
+
 
 const Home = () => {
+  const nav = useNavigate();
+  
+  const toUpload=()=>{
+    nav("/aero/ImageUpload");
+  }
   return (
-    <div className="home-container">
+    <div id="home-section" className="home-container">
       <Navbar />
       <div className="home-banner-container">
         <div className="home-bannerImage-container">
@@ -24,7 +35,7 @@ const Home = () => {
           {/* <button className="secondary-button">
             Learn More <FiArrowRight />
           </button> */}
-          <button className="secondary-button">
+          <button className="secondary-button" onClick={toUpload}>
             Upload Image <FiArrowRight />
           </button>
           <button className="secondary-button">
@@ -36,6 +47,10 @@ const Home = () => {
           <img src={BannerImage} alt="Banner" />
         </div>
       </div>
+      <About/>
+      <Work/>
+      <Contact/>
+      <Footer/>
     </div>
   );
 };
