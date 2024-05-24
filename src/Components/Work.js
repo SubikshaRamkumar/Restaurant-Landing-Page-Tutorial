@@ -1,22 +1,22 @@
 import React from "react";
-import PickMeals from "../Assets/image-analysis1.png";
-import ChooseMeals from "../Assets/solution.png";
-import DeliveryMeals from "../Assets/maintenance.png";
+import ImageAnalysis from "../Assets/image-analysis1.png";
+import Solution from "../Assets/solution.png";
+import Maintenance from "../Assets/maintenance.png";
 
 const Work = () => {
   const workInfoData = [
     {
-      image: PickMeals,
+      image: ImageAnalysis,
       title: "Image Analysis",
       text: "Upload an image for accurate analysis.",
     },
     {
-      image: ChooseMeals,
+      image: Solution,
       title: "Solution Assistance",
       text: "Need repair solutions? Simply provide an image.",
     },
     {
-      image: DeliveryMeals,
+      image: Maintenance,
       title: "Enhanced Maintenance",
       text: "Experience fast and efficient maintenance procedures.",
     },
