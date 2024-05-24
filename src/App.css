@@ -35,7 +35,7 @@ nav {
 .navbar-links-container a {
   margin-right: 3rem;
   text-decoration: none;
-  color: black;
+  color:rgb(15, 15, 98) ;
   font-size: 1.1rem;
   font-weight: 600;
 }
@@ -73,7 +73,7 @@ nav {
   max-width: 700px;
 }
 .home-image-section {
-  max-width: 600px;
+  max-width: 1000px;
   flex: 1;
 }
 .home-text-section {
@@ -83,21 +83,27 @@ nav {
   justify-content: center;
   align-items: flex-start;
 }
+.button-horizontal
+{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
 .primary-heading {
   font-size: clamp(2rem, 5vw, 4rem);
-  color: #4c4c4c;
+  color: rgb(15, 15, 98);
   /* line-height: 5rem; */
   max-width: 600px;
 }
 .primary-text {
   font-size: clamp(1rem, 3vw, 1.5rem);
   max-width: 500px;
-  color: #6a6a6a;
+  color: rgb(15, 15, 98);
   margin: 1.5rem 0rem;
 }
 .secondary-button {
   padding: 1rem 2.5rem;
-  background-color: #fe9e0d;
+  background-color: rgb(15, 15, 98);
   outline: none;
   border: none;
   border-radius: 5rem;
@@ -115,7 +121,7 @@ nav {
   font-size: 1.5rem;
 }
 .secondary-button:hover {
-  background-color: #e48f0f;
+  background-color: rgb(24, 24, 153);
 }
 .about-section-container {
   margin-top: 20rem;
@@ -227,7 +233,7 @@ nav {
 .footer-section-columns span {
   margin: 0.25rem 0rem;
   font-weight: 600;
-  color: #4c4c4c;
+  color: rgb(15, 15, 98);
   cursor: pointer;
 }
 .testimonial-section-bottom {
@@ -317,6 +323,15 @@ nav {
   }
   .home-bannerImage-container {
     max-width: 600px;
+  }
+  .button-horizontal
+  {
+    flex-direction: column;
+  }
+  .secondary-button
+  {
+    margin-bottom: 40px;
+
   }
 }
 @media (max-width: 800px) {

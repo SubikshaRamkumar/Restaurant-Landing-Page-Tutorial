@@ -1,24 +1,24 @@
 import React from "react";
-import PickMeals from "../Assets/pick-meals-image.png";
-import ChooseMeals from "../Assets/choose-image.png";
-import DeliveryMeals from "../Assets/delivery-image.png";
+import PickMeals from "../Assets/image-analysis1.png";
+import ChooseMeals from "../Assets/solution.png";
+import DeliveryMeals from "../Assets/maintenance.png";
 
 const Work = () => {
   const workInfoData = [
     {
       image: PickMeals,
-      title: "Pick Meals",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et sagittis duis elementum interdum facilisi bibendum.",
+      title: "Image Analysis",
+      text: "Upload an image for accurate analysis.",
     },
     {
       image: ChooseMeals,
-      title: "Choose How Often",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et ",
+      title: "Solution Assistance",
+      text: "Need repair solutions? Simply provide an image.",
     },
     {
       image: DeliveryMeals,
-      title: "Fast Deliveries",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et lorem ipsum",
+      title: "Enhanced Maintenance",
+      text: "Experience fast and efficient maintenance procedures.",
     },
   ];
   return (
@@ -27,15 +27,14 @@ const Work = () => {
         <p className="primary-subheading">Work</p>
         <h1 className="primary-heading">How It Works</h1>
         <p className="primary-text">
-          Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
-          elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
+        Explore the simplified process of our aircraft maintenance solution. From analysis to recommendation, discover how we ensure safety and efficiency.
         </p>
       </div>
       <div className="work-section-bottom">
         {workInfoData.map((data) => (
           <div className="work-section-info" key={data.title}>
             <div className="info-boxes-img-container">
-              <img src={data.image} alt="" />
+              <img className="image1" src={data.image} alt="" />
             </div>
             <h2>{data.title}</h2>
             <p>{data.text}</p>
